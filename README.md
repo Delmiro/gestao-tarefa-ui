@@ -44,3 +44,6 @@ Estrutura de Rotas
 | Quando e em que contexto?                                    | Aprendizado acadêmico e leitura de documentação para manutenção teórica de sistemas legados.                                       |
 | Quais tipos de aplicações você desenvolveu?                  | Não desenvolvi aplicações reais; apenas estudo de conceitos de Flex/ActionScript.                                                  |
 | Você se considera apto a dar manutenção em sistemas legados? | Sim. Possuo conhecimento teórico suficiente para entender a lógica de sistemas existentes e realizar manutenção quando necessário. |
+
+
+![Gestão de tarefa](src/app/gestao-de-tarefa.png)
