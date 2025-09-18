@@ -32,26 +32,15 @@ Acesse em: http://localhost:4200
 
 Estrutura de Rotas
 
-/tarefas → Lista de Tarefas
+| Rota           | Descrição                         |
+| -------------- | --------------------------------- |
+| `/tarefas`     | Lista todas as tarefas            |
+| `/nova-tarefa` | Formulário para criar nova tarefa |
 
-/nova-tarefa → Formulário de criação de nova tarefa
 
-
-Parte 4 – Experiência com Flex (teórica)
-
-Já trabalhou com Adobe Flex/ActionScript?
-
-Resposta: Só teórico.
-
-Quando e em que contexto?
-
-Resposta: Aprendizado acadêmico e leitura de documentação para manutenção teórica de sistemas legados.
-
-Quais tipos de aplicações você desenvolveu?
-
-Resposta: Não desenvolvi aplicações reais, apenas estudo de conceitos de Flex/ActionScript.
-
-Você se considera apto a dar manutenção em sistemas legados em Flex?
-
-Resposta: Sim, totalmente! Possuo conhecimento teórico suficiente para entender a lógica e realizar manutenção em sistemas existentes.
-
+| Pergunta                                                     | Resposta                                                                                                                           |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Já trabalhou com Adobe Flex/ActionScript?                    | Apenas conhecimento teórico.                                                                                                       |
+| Quando e em que contexto?                                    | Aprendizado acadêmico e leitura de documentação para manutenção teórica de sistemas legados.                                       |
+| Quais tipos de aplicações você desenvolveu?                  | Não desenvolvi aplicações reais; apenas estudo de conceitos de Flex/ActionScript.                                                  |
+| Você se considera apto a dar manutenção em sistemas legados? | Sim. Possuo conhecimento teórico suficiente para entender a lógica de sistemas existentes e realizar manutenção quando necessário. |
