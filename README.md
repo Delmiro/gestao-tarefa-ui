@@ -31,6 +31,7 @@ npm start
 Acesse em: http://localhost:4200
 
  Funcionalidades
+ 
 ✅ Listagem paginada de tarefas
 
 ✅ Criação de novas tarefas
