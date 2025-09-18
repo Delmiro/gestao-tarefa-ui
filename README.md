@@ -1,59 +1,57 @@
-# GestaoTarefaUi
+# Gestão de Tarefas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.2.
+## Descrição do Projeto
+Aplicação web para gerenciamento de tarefas, permitindo criar, listar, editar e excluir tarefas com controle de status, datas e paginação.  
+O projeto utiliza Angular 20 com componentes standalone e suporte a SSR (Server-Side Rendering) com Node/Express.
 
-## Development server
+---
 
-To start a local development server, run:
+## Tecnologias Utilizadas
 
-```bash
-ng serve
-```
+- **Frontend:** Angular 20, TypeScript, RxJS, Zone.js  
+- **SSR (Server-Side Rendering):** @angular/ssr, Express  
+- **Estilização:** CSS/SCSS (pode incluir frameworks se usados)  
+- **Ferramentas de Desenvolvimento:** Angular CLI, TypeScript, Prettier  
+- **Testes:** Jasmine, Karma  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Instruções para Rodar
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Frontend
 
-```bash
-ng generate component component-name
-```
+1. Instale as dependências:
+   ```bash
+   npm install
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Rode a aplicação em modo de desenvolvimento:
 
-```bash
-ng generate --help
-```
+npm start
 
-## Building
+Acesse em: http://localhost:4200
 
-To build the project run:
+Estrutura de Rotas
 
-```bash
-ng build
-```
+/tarefas → Lista de Tarefas
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+/nova-tarefa → Formulário de criação de nova tarefa
 
-## Running unit tests
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Parte 4 – Experiência com Flex (teórica)
 
-```bash
-ng test
-```
+Já trabalhou com Adobe Flex/ActionScript?
 
-## Running end-to-end tests
+Resposta: Só teórico.
 
-For end-to-end (e2e) testing, run:
+Quando e em que contexto?
 
-```bash
-ng e2e
-```
+Resposta: Aprendizado acadêmico e leitura de documentação para manutenção teórica de sistemas legados.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Quais tipos de aplicações você desenvolveu?
 
-## Additional Resources
+Resposta: Não desenvolvi aplicações reais, apenas estudo de conceitos de Flex/ActionScript.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Você se considera apto a dar manutenção em sistemas legados em Flex?
+
+Resposta: Sim, totalmente! Possuo conhecimento teórico suficiente para entender a lógica e realizar manutenção em sistemas existentes.
+
