@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Tarefa, TarefaService } from '../../services/tarefa.service';
+import { Tarefa, TarefaService, PageResponse  } from '../../services/tarefa.service';
 
 @Component({
   selector: 'app-tarefa-list',
@@ -14,6 +14,9 @@ export class TarefaListComponent implements OnInit {
   tarefas: Tarefa[] = [];
   carregando = false;
   erro: string | null = null;
+  paginaAtual = 0;
+  totalPaginas = 0;
+  totalElementos = 0;
 
   constructor(private tarefaService: TarefaService) {}
 
@@ -21,20 +24,33 @@ export class TarefaListComponent implements OnInit {
     this.carregarTarefas();
   }
 
-  carregarTarefas(): void {
+  carregarTarefas(pagina: number = 0): void {
     this.carregando = true;
     this.erro = null;
 
-    this.tarefaService.listar().subscribe({
-      next: (resposta) => {
-        this.tarefas = resposta.content ?? resposta;
+    this.tarefaService.listar(undefined, pagina).subscribe({
+      next: (resposta: PageResponse<Tarefa>) => {
+        this.tarefas = resposta.content;
+        this.paginaAtual = resposta.number;
+        this.totalPaginas = resposta.totalPages;
+        this.totalElementos = resposta.totalElements;
         this.carregando = false;
       },
-      error: () => {
+      error: (error) => {
+        console.error('Erro completo:', error);
         this.erro = 'Erro ao carregar tarefas';
         this.carregando = false;
+        
+        // Para debug - verifique o console
+        if (error.error) {
+          console.error('Detalhes do erro:', error.error);
+        }
       }
     });
+  }
+
+  mudarPagina(pagina: number): void {
+    this.carregarTarefas(pagina);
   }
 
   excluir(id: number): void {

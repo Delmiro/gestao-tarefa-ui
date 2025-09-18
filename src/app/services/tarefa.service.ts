@@ -10,6 +10,13 @@ export interface Tarefa {
   dataCriacao: string;
   idProjeto: number;
 }
+export interface PageResponse<T> {
+  content: T[];
+  totalElements: number;
+  totalPages: number;
+  size: number;
+  number: number;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -19,12 +26,16 @@ export class TarefaService {
 
   constructor(private http: HttpClient) {}
 
-  listar(idProjeto?: number, page: number = 0, size: number = 10): Observable<any> {
-    let params = new HttpParams().set('page', page).set('size', size);
+  listar(idProjeto?: number, page: number = 0, size: number = 10): Observable<PageResponse<Tarefa>> {
+    let params = new HttpParams()
+      .set('page', page.toString())
+      .set('size', size.toString());
+    
     if (idProjeto) {
-      params = params.set('idProjeto', idProjeto);
+      params = params.set('idProjeto', idProjeto.toString());
     }
-    return this.http.get<any>(this.apiUrl, { params });
+    
+    return this.http.get<PageResponse<Tarefa>>(this.apiUrl, { params });
   }
 
   criar(tarefa: Partial<Tarefa>): Observable<Tarefa> {
