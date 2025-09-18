@@ -1,0 +1,29 @@
+<div class="card mt-4">
+    <div class="card-body">
+      <h2 class="card-title text-center">Lista de Tarefas</h2>
+  
+      <table class="table table-striped mt-3" *ngIf="tarefas.length > 0; else semTarefas">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Descrição</th>
+            <th>Status</th>
+            <th>Data Criação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tarefa of tarefas">
+            <td>{{ tarefa.titulo }}</td>
+            <td>{{ tarefa.descricao }}</td>
+            <td>{{ tarefa.status }}</td>
+            <td>{{ tarefa.dataCriacao | date:'dd/MM/yyyy HH:mm' }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <ng-template #semTarefas>
+        <p class="text-center mt-3">Nenhuma tarefa encontrada.</p>
+      </ng-template>
+    </div>
+  </div>
+  
