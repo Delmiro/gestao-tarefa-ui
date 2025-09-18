@@ -62,4 +62,6 @@ Estrutura de Rotas
 | Você se considera apto a dar manutenção em sistemas legados? | Sim. Possuo conhecimento teórico suficiente para entender a lógica de sistemas existentes e realizar manutenção quando necessário. |
 
 
-![Gestão de tarefa](src/app/gestao-de-tarefa.png)
+![Gestão de tarefa]
+
+<img width="514" height="369" alt="gestão de tarefa" src="https://github.com/user-attachments/assets/4238127c-bf42-4bce-a4f3-2a30ac5fe851" />
