@@ -49,8 +49,28 @@ export class TarefaListComponent implements OnInit {
     });
   }
 
+  getStatusDisplay(status: string): string {
+    const statusMap: { [key: string]: string } = {
+      'ABERTA': 'Aberta',
+      'EM_ANDAMENTO': 'Em Andamento', 
+      'CONCLUIDA': 'Concluída'
+    };
+    return statusMap[status] || status;
+  }
+
   mudarPagina(pagina: number): void {
     this.carregarTarefas(pagina);
+  }
+
+  getPaginas(): number[] {
+    const paginas = [];
+    const inicio = Math.max(0, this.paginaAtual - 2);
+    const fim = Math.min(this.totalPaginas, inicio + 5);
+    
+    for (let i = inicio; i < fim; i++) {
+      paginas.push(i + 1);
+    }
+    return paginas;
   }
 
   excluir(id: number): void {
