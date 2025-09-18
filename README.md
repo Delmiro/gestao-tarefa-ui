@@ -30,6 +30,21 @@ npm start
 
 Acesse em: http://localhost:4200
 
+ Funcionalidades
+✅ Listagem paginada de tarefas
+
+✅ Criação de novas tarefas
+
+✅ Exclusão de tarefas
+
+✅ Filtros por status (Aberta, Em Andamento, Concluída)
+
+✅ Interface responsiva
+
+✅ Navegação por páginas
+
+✅ Indicadores visuais de status
+
 Estrutura de Rotas
 
 | Rota           | Descrição                         |
